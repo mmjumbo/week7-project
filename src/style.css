@@ -84,10 +84,26 @@ main {
   font-size: 28px;
 }
 
+.weather-forecast {
+  margin-top: 25px;
+  text-align: center;
+}
+
 footer {
   border-top: 1px solid rgb(218, 218, 218);
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 13px;
   color: rgba(0, 0, 0, 0.6);
+}
+.weather-forecast-day {
+  font-size: 16px;
+  color: blueviolet;
+}
+.weather-forecast-temparatures {
+  font-size: 13px;
+  color: blueviolet;
+}
+.min-temp {
+  opacity: 0.6;
 }
