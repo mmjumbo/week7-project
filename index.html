@@ -2,16 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Week 7</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Meteo App</title>
   </head>
   <body>
     <div class="weather-app">
@@ -19,7 +19,7 @@
         <form class="search-form" id="search-form">
           <input
             type="search"
-            placeholder="Enter a city .."
+            placeholder="Enter a city.."
             required
             id="search-form-input"
             class="search-form-input"
@@ -28,44 +28,76 @@
         </form>
       </header>
       <main>
-        <div class="weather-app-info">
+        <div class="weather-app-data">
           <div>
             <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-              <span id="time"> </span><span id="description"></span>
+              <span id="time"></span>,
+              <span id="description"></span>
               <br />
               Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="wind"></strong>
+              <strong id="wind-speed"></strong>
             </p>
           </div>
-          <div class="weather-app-temparature-container">
-            <div id="weather-app-icon"></div>
-
-            <div
-              class="weather-app-temparature-value"
-              id="weather-app-temparature-value"
-            ></div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
         <div class="weather-forecast">
-          <div class="row">
-            <div class="col-2">
-              <div class="weather-forecast-day">Mon</div>
-              <div>
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1w3lKebnWgLeJhvAjaSJJouNxL_khy4EpSb4RtSBvmqpHUXn2aTSBuPysuC4xVT9Rlg&usqp=CAU"
-                  alt=""
-                  width="70"
-                />
-                <div class="weather-forecast-temparatures">
-                  <span class="max-temp">18°</span>
-                  <span class="min-temp">12°</span>
-                </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Tue</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
               </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
+            </div>
+          </div>
+          <div class="weather-forecast-day">
+            <div class="weather-forecast-date">Wed</div>
+            <div class="weather-forecast-icon">🌤️</div>
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>15º</strong>
+              </div>
+              <div class="weather-forecast-temperature">9º</div>
             </div>
           </div>
         </div>
+      </main>
       </main>
       <footer>
         This project is Built By
