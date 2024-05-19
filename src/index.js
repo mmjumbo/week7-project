@@ -87,4 +87,11 @@ function displayForecast(response) {
 `;
 }
   });
-  let forecastElement = docu
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Paris");
